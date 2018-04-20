@@ -1,0 +1,49 @@
+/*圆角*/
+.border_radius(@radius: 2px) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+.border_radius(@radius1,@radius2,@radius3,@radius4) {
+  border-radius: @arguments;
+  -moz-border-radius: @arguments;
+  -webkit-border-radius: @arguments;
+}
+.box_shadow(@val) {
+  box-shadow: @val;
+  -moz-box-shadow: @val;
+  -webkit-box-shadow: @val;
+  -o-box-shadow: @val;
+  -mis-box-shadow: @val;
+}
+.box_shadow(@val1,@val2) {
+  box-shadow: @val1,@val2;
+  -moz-box-shadow: @val1,@val2;
+  -webkit-box-shadow: @val1,@val2;
+  -o-box-shadow: @val1,@val2;
+  -mis-box-shadow: @val1,@val2;
+}
+/*左三角形*/
+.triangle-left(@borderWidth,@bgColor){
+  border-right:@borderWidth solid @bgColor;
+  border-top:@borderWidth solid transparent;
+  border-bottom:@borderWidth solid transparent;
+}
+/*右三角形*/
+.triangle-right(@borderWidth,@bgColor){
+  border-left:@borderWidth solid @bgColor;
+  border-top:@borderWidth solid transparent;
+  border-bottom:@borderWidth solid transparent;
+}
+/*上三角形*/
+.triangle-top(@borderWidth,@bgColor){
+  border-right:@borderWidth solid transparent;
+  border-left:@borderWidth solid transparent;
+  border-bottom:@borderWidth solid @bgColor;
+}
+/*下三角形*/
+.triangle-bottom(@borderWidth,@bgColor){
+  border-right:@borderWidth solid transparent;
+  border-left:@borderWidth solid transparent;
+  border-top:@borderWidth solid @bgColor;
+}

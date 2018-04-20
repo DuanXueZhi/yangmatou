@@ -1,0 +1,123 @@
+/*右箭头*/
+.right{
+  width:20px;
+  height:20px;
+  position:absolute;
+  left:0;
+  top:0;
+  border:1px solid blue;
+}
+.right-arrow1,.right-arrow2{
+  width:0;
+  height:0;
+  display:block;
+  position:absolute;
+  left:0;
+  top:0;
+  border-top:10px transparent dashed;
+  border-right:10px transparent dashed;
+  border-bottom:10px transparent dashed;
+  border-left:10px white solid;
+  overflow:hidden;
+}
+.right-arrow1{
+  left:1px;/*重要*/
+  border-left:10px blue solid;
+}
+.right-arrow2{
+  border-left:10px white solid;
+}
+/*左箭头*/
+.left{
+  width:20px;
+  height:20px;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index: 2;/*兼容ie8-*/
+  border:1px solid blue;
+}
+.left-arrow1,.left-arrow2{
+  width:0;
+  height:0;
+  display:block;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:5;/*兼容ie8-*/
+  border-top:10px transparent dashed;
+  border-left:10px transparent dashed;
+  border-bottom:10px transparent dashed;
+  border-right:10px white solid;
+  overflow:hidden;
+}
+.left-arrow1{
+  border-right:10px blue solid;
+}
+.left-arrow2{
+  left:1px;/*重要*/
+  border-right:10px white solid;
+}
+/*上箭头*/
+.top{
+  width:20px;
+  height:20px;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index: 2;/*兼容ie8-*/
+  border:1px solid blue;
+}
+.top-arrow1,.top-arrow2{
+  width:0;
+  height:0;
+  display:block;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index: 5;/*兼容ie8-*/
+  border-top:10px transparent dashed;
+  border-left:10px transparent dashed;
+  border-right:10px transparent dashed;
+  border-bottom:10px white solid;
+  overflow:hidden;
+}
+.top-arrow1{
+  border-bottom:10px blue solid;
+}
+.top-arrow2{
+  top:1px;/*重要*/
+  border-bottom:10px white solid;
+}
+/*下箭头*/
+.bottom{
+  width:20px;
+  height:20px;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index: 2;/*兼容ie8-*/
+  border:1px solid blue;
+}
+.bottom-arrow1,.bottom-arrow2{
+  width:0;
+  height:0;
+  display:block;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index: 5;/*兼容ie8-*/
+  border-bottom:10px transparent dashed;
+  border-left:10px transparent dashed;
+  border-right:10px transparent dashed;
+  border-top:10px white solid;
+  overflow:hidden;
+}
+.bottom-arrow1{
+  top:1px;/*重要*/
+  border-top:10px blue solid;
+}
+.bottom-arrow2{
+  border-top:10px white solid;
+}
+
